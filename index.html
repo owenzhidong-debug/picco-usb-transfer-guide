@@ -646,7 +646,7 @@
             <div class="address">www.booxtiles.com</div>
             <div class="folder" id="folderState">
               <span class="folder-icon" aria-hidden="true"></span>
-              <span>未选择 BooxTile 盘符</span>
+              <span>未选择 BooxTile 文件夹</span>
             </div>
           </div>
 
@@ -659,7 +659,7 @@
           <div class="actions">
             <button class="action" type="button" id="prev">上一步</button>
             <button class="action primary" type="button" id="next">下一步</button>
-            <button class="action primary" type="button" id="confirm" hidden>确定，选择 BooxTile 盘符</button>
+            <button class="action primary" type="button" id="confirm" hidden>确定，选择 BooxTile 文件夹</button>
           </div>
         </section>
 
@@ -674,8 +674,8 @@
 
   <div class="modal" id="pickerModal" role="dialog" aria-modal="true" aria-labelledby="pickerTitle">
     <div class="dialog">
-      <div class="dialog-title" id="pickerTitle">选择 BooxTile 盘符</div>
-      <div class="step-desc">在系统文件夹选择器中，选择名为 BooxTile 的盘符或目录。</div>
+      <div class="dialog-title" id="pickerTitle">选择 BooxTile 文件夹</div>
+      <div class="step-desc">在系统文件夹选择器中，选择名为 BooxTile 的文件夹。</div>
       <div class="fake-picker" aria-label="系统文件夹选择器示意">
         <div class="picker-row">📁 文稿</div>
         <div class="picker-row">📁 下载</div>
@@ -722,9 +722,9 @@
         picco: 'USB 传输待开启'
       },
       {
-        title: '3. 选择 BooxTile 盘符',
-        desc: '需要先选择电脑中的 BooxTile 盘符，网页才可以把图书传输到 Picco。',
-        status: '等待选择盘符',
+        title: '3. 选择 BooxTile 文件夹',
+        desc: '需要先选择 Picco 中的 BooxTile 文件夹，网页才可以把图书传输到设备。',
+        status: '等待选择文件夹',
         picco: '等待网页传输'
       }
     ];
@@ -771,12 +771,12 @@
     });
     selectFolder.addEventListener('click', () => {
       pickerModal.classList.remove('show');
-      folderState.innerHTML = '<span class="folder-icon" aria-hidden="true"></span><span>已选择 BooxTile 盘符</span>';
+      folderState.innerHTML = '<span class="folder-icon" aria-hidden="true"></span><span>已选择 BooxTile 文件夹</span>';
       statusText.textContent = '可以传输';
       status.classList.add('is-transfer');
       piccoState.textContent = '正在接收文件';
       visual.classList.add('is-transfer');
-      stepTitle.textContent = 'BooxTile 盘符已选择';
+      stepTitle.textContent = 'BooxTile 文件夹已选择';
       stepDesc.textContent = '现在可以选择图书并传输到 Picco。传输过程中请保持 USB 连接。';
       confirm.textContent = '选择图书';
     });
