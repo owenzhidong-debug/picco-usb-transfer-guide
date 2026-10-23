@@ -1,0 +1,7 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="14" height="22" viewBox="0 0 14 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="stroke0_0_118" maskUnits="userSpaceOnUse" x="0" y="4.76837e-07" width="14" height="22" fill="black">
+<rect fill="white" y="4.76837e-07" width="14" height="22"/>
+<path d="M2 2L12 2V20H2V2Z"/>
+</mask>
+<path id="Rectangle 2" d="M2 2L12 2V20H2V2Z" stroke-width="4" stroke-linejoin="bevel" stroke="black" mask="url(#stroke0_0_118)"/>
+</svg>
